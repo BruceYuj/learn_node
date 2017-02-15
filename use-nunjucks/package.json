@@ -1,0 +1,21 @@
+{
+    "name": "use-nunjucks",
+    "version": "1.0.0",
+    "description": "Hello nunjucks",
+    "main": "start.js",
+    "script": {
+        "start": "node --use_strict start.js"
+    },
+    "keywords": [
+        "nunjucks"
+    ],
+    "author": "burceyuj",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BruceYuj/learn_node"
+    },
+    "dependencies": {
+         "nunjucks": "2.4.2"
+    }
+}

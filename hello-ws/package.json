@@ -1,0 +1,21 @@
+{
+    "name": "hello-ws",
+    "version": "1.0.0",
+    "description": "Hello ws",
+    "main": "start.js",
+    "script": {
+        "start": "node start.js"
+    },
+    "keywords": [
+        "websocket"
+    ],
+    "author": "burceyuj",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BruceYuj/learn_node"
+    },
+    "dependencies": {
+        "ws": "1.1.1"
+    }
+}

@@ -1,24 +1,27 @@
 
 
 var fn_index = async (ctx, next) => {
-    ctx.response.body = `<h1>Index</h1>
-        <form action="/signin" method="post">
-            <p>Name: <input name="name" value="koa" /></p>
-            <p>Password: <input name="password" value="password" /></p>
-            <p><input type="submit" value="submit" /></p>
-        </form>`;
+    ctx.render('index.html', {
+        title: 'welcome'
+    });
 };
 
 var fn_signin = async (ctx, next) => {
     var
-        name = ctx.request.body.name || '',
+        email = ctx.request.body.email || '',
         password = ctx.request.body.password || '';
-    console.log(`signin with name: ${name}, password: ${password}`);
-    if (name === 'koa' && password ==='12345') {
-        ctx.response.body = `<h1>welcome, ${name}</h1>`;
+    console.log(`signin with name: ${email}, password: ${password}`);
+    if (email === '444048170@qq.com' && password ==='12345') {
+        // 登录成功
+        ctx.render('signin-ok.html', {
+            title: 'Sign In OK',
+            name: 'Mr Node'
+        });
     } else {
-        ctx.response.body = `<h1>Login failed</h1>
-        <p><a href='/'>Try again</a></p>`;
+        // 登录失败
+        ctx.render('signin-failed.html', {
+            title: 'Sign In failed'
+        });
 
     }
 };

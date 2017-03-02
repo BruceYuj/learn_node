@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="description" content="learn node.js">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+</head>
+
+<body>
+    <header class="navbar navbar-static-top"> 
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Learn Node</a>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a target="_blank" href="http://www.liaoxuefeng.com/">Get Courses</a></li>
+                    <li><a target="_blank" href="https://github.com/bruceyuj/learn_node">Source Code</a></li>
+                    <li><a target="_blank" href="http://getbootstrap.com/">Resource</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="important" style="color:#cdbfe3; background-color:#6f5499; padding:30px 0; margin:-20px 0 20px 0;">
+        <div class="container">
+            <h1 style="color:#fff; font-size:60px">Getting started with RESTful API</h1>
+            <p style="font-size:24px; line-height:48px">Simple examples about RESTful API.</p>
+        </div>
+    </div>
+    {%block main%}{%endblock%}
+    
+    <footer style="background-color:#ddd; padding: 20px 0;">
+        <div class="container">
+            <p>
+                <a target="_blank" href="http://www.bruceyuj.top">Website</a> - 
+                <a target="_blank" href="https://github.com/bruceyuj/learn_node">GitHub</a> - 
+            </p>
+            <p>Code licensed <a target="_blank" href="https://github.com/michaelliao/learn-javascript/blob/master/LICENSE">Apache</a>.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    {% block script %}{% endblock %}
+</body>
+</html>
